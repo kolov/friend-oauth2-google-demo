@@ -1,6 +1,6 @@
 # friend-oauth2-google-demo
 
-Demo of Google OpenID Connect (OAuth2) authentication with 
+Demo of Google OpenID Connect (extended OAuth2) authentication with 
 [ddellacosta/friend-oauth2](https://github.com/ddellacosta/friend-oauth2) 
 and
 [cemerick/friend](https://github.com/cemerick/friend).
@@ -10,7 +10,7 @@ information provided by google and shows it on screen, something like:
 
     identity {:gender "male", 
               :kind "plus#person", 
-              :etag "\"RqKWnRU4WW46-6W3rWhLR9iFZQM/oXobESu4b9W1k-_frJhkhk75tQI\"", 
+              :etag "\"xxx\"", 
               :name 
             {:familyName "xxx", :givenName "xxx"}, 
             :placesLived [{:value "xxx", :primary true}], 
