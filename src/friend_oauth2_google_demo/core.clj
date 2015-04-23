@@ -53,7 +53,7 @@
         resp (client/get (str "https://www.googleapis.com/plus/v1/people/me?access_token=" (:access-token token)))
         data (-> resp :body (json/read-str :key-fn keyword))]
 
-    {:identity data :roles #{::user}}))
+    {:identity (:id data) :roles #{::user}}))
 
 (def uri-config
   {:authentication-uri {:url   "https://accounts.google.com/o/oauth2/auth"
